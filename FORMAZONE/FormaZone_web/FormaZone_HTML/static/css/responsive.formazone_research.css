@@ -1,0 +1,266 @@
+@media screen and (max-width: 1900px){
+    header{
+        display: inline-block;
+    }
+
+
+
+    .filter_customer{
+
+
+    }
+
+
+    @keyframes aparision {
+        0%{
+            opacity: 0;
+        }
+
+        100%{
+            opacity: 1;
+        }
+    }
+
+    @keyframes deplacement3{
+        0%{
+            height: 0px;
+            
+        }
+    
+        100%{
+            height: 200px;
+           
+        }
+    }
+    @keyframes roulement2{
+        0%{
+            height: 200px;
+        }
+    
+        100%{
+            height: 0px;
+        }
+    }
+    header .Inputeur{
+        display: block;
+        justify-content: center;
+    }
+
+    header .Inputeur .box_1{
+             padding-right: 0;
+             justify-content: center;
+    }
+    header .Inputeur .box_1 #domaine_de_recherche{
+        width: 600px;
+    }
+
+    .filter_zone{
+        
+        justify-content: center;
+        border-top: 1px solid;
+        border-left: none;
+    }
+
+    .Hide_side.active{
+        text-align: center;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-content: center;
+    }
+
+    .filter_customer.active{
+        height: 200px;
+
+        justify-content: center;
+
+
+    }
+
+  
+}
+
+
+@media screen and (max-width: 1200px){
+ 
+
+    .box_1{
+        justify-content: start;
+        padding: 10px 0px;
+       
+    }
+
+    header .Inputeur .box_1 #domaine_de_recherche{
+        width: 400px;
+        font-size: 15px;
+    }
+    header .Inputeur .box_1 #Lieu{
+        width: 200px;
+        font-size: 15px;
+    }
+
+    header .Inputeur ion-icon {
+       
+        font-size: 2.5em;
+    }
+
+    .filter_zone .filter_logo ion-icon{
+        font-size: 2.5em;
+    }
+
+    
+
+    header .Inputeur h1{
+        font-size: 1.3em;
+    }
+}
+
+@keyframes deplacement2{
+    0%{
+        height: 0px;
+    }
+
+    100%{
+        height: 200px;
+    }
+}
+
+@keyframes roulement2{
+    0%{
+        height: 200px;
+    }
+
+    100%{
+        height: 0px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .box_1{
+        display: flex;
+       
+        justify-content: center;
+    }
+
+    header .Inputeur h1{
+        display: none;
+    }
+   
+}
+
+@media screen and (max-width: 650px){
+    .box_1{
+        display: flex;
+       flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    header .Inputeur .box_1{
+        padding: 30px;
+    }
+
+    header .Inputeur h1{
+        display: none;
+    }
+
+    header .Inputeur .box_1 #domaine_de_recherche{
+        width: 350px;
+        margin: 0;
+       
+    }
+
+    header .Inputeur .box_1 #Lieu{
+        width: 350px;
+    }
+
+    .boxe_for_main-title{
+        padding: 20px;
+        font-size: 10px;
+    }
+
+    .Repeated_card_design{
+        width: 350px;
+    }
+    .Hide_side{
+       opacity: 1;
+    }
+    .Hide_side.active{
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 2em;
+
+        animation: aparision 1s ease-in;
+
+    }
+
+    .filter_customer{
+
+
+    }
+
+    .filter_customer.active{
+        height: 500px;
+
+
+
+       
+    }
+
+    @keyframes aparision {
+        0%{
+            opacity: 0;
+        }
+
+        100%{
+            opacity: 1;
+        }
+    }
+
+ 
+
+    
+
+    @keyframes deplacement4{
+        0%{
+            height: 0px;
+        }
+    
+        100%{
+            height: 500px;
+        }
+    }
+
+    @keyframes roulement4{
+        0%{
+            height: 500px;
+            opacity: 1;
+        }
+    
+        100%{
+            height: 0px;
+            opacity: 0;
+        }
+    }
+
+
+    
+
+
+
+
+    .Valider_la_recherche{
+        display: flex;
+    }
+
+
+
+    .search_logo ion-icon{
+        display: none;
+    }
+   
+}
+
