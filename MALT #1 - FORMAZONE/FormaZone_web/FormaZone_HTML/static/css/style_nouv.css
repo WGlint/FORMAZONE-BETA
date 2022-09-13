@@ -1,0 +1,397 @@
+.transition_color1{
+    background: linear-gradient(#f5f5f5, #DDDDDD );
+    height: 1vh;
+    
+}
+.transition_color2{
+    height: 1vh;
+    
+    background:linear-gradient(#DDDDDD , #007FFF ) ;
+}
+
+.transition_color3{
+    height: 1vh;
+    
+    background:linear-gradient(#007FFF , #f5f5f5 ) ;
+}
+.tout_formation{
+    background: #f5f5f5;
+    height: auto;
+    
+    margin: auto;
+    padding: 40px 100px;
+    
+    
+}
+
+.tout_formation h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: #007FFF;
+    margin-bottom: 50px;
+    padding-top: 50px;
+}
+
+.tout_formation .grandbtn{
+    position: relative;
+    text-align: center;
+    
+
+}
+.tout_formation .grandbtn .btn6{
+    display: inline-block;
+    margin: 10px;
+    
+}
+.tout_formation .grandbtn .btn6 button{
+    font-size: 15px;
+    border-radius: 25px;
+    background: #f5f5f5;
+    border: solid 2px #007FFF;
+    color: #007FFF;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+   
+}
+
+.tout_formation .grandbtn .btn6 button .petit_titrage{
+    font-size: 12px;
+    color: #000;
+    animation: colorage 5s linear infinite;
+}
+
+.tout_formation .grandbtn .btn6 button:hover {
+    
+    background: #007FFF;
+    border: solid 2px #fff;
+    color: #fff;
+    padding: 10px;
+    
+    
+}
+@keyframes colorage{
+    0%{
+        color: #007FFF;
+    }
+
+    14.28%{
+        color: #2278CF;
+    }
+
+    28.57%{
+        color: #3171B2;
+    }
+
+    42.85%{
+        color: #406387;
+    }
+
+    57.13%{
+        color: #436181;
+    }
+
+    71.41%{
+        color: #3171B2;
+    }
+
+    85.69%{
+        color: #2278CF;
+    }
+
+    100%{
+        color: #007FFF;
+    }
+}
+
+
+
+
+footer{
+   
+    height: 10vh;
+    border-top: #000 solid 2px;
+    text-align: center;
+    padding-top: 50px;
+   
+}
+
+footer p{
+    font-size: 1.0em;
+    color: #000;
+    text-decoration: none;
+}
+
+footer p a{
+    color: #000;
+    transition: all 0.5s ease-in-out;
+}
+
+footer p a:hover{
+    color: #007FFF;
+    
+}
+
+
+
+
+
+
+
+.reserch .Point_gauche{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.reserch .Point_gauche .dessin{
+  
+      position: absolute;
+      background-color: #0131B4;
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      top: 10%;
+      left: -10%;
+      animation: levitation 9s infinite;
+      animation-delay: 1.3s;
+
+}
+
+.reserch .Point_gauche .dessin1{
+   
+      
+      position: absolute;
+      animation: levitation 6s infinite;
+      animation-delay: 0.2s;
+      background-color: #0131B4;
+      border-radius: 50%;
+     width: 90px;
+      height: 90px;
+      top: 0%;
+      left: 50%;
+
+}
+.reserch .Point_gauche .dessin2{
+   
+     
+      position: absolute;
+      animation: levitation 9s infinite;
+      animation-delay: 0.9s;
+      background-color: #0131B4;
+      border-radius: 50%;
+     width: 60px;
+      height: 60px;
+      top: 20%;
+      left: 50%;
+
+}
+
+.reserch .Point_gauche .dessin3{
+   
+      
+      position: absolute;
+      animation: levitation 8s infinite;
+      animation-delay: 0.5s;
+      background-color: #0131B4;
+      border-radius: 50%;
+     width: 90px;
+      height: 90px;
+      top: 62%;
+      left: 10%;
+
+}
+
+.reserch .Point_gauche .dessin4{
+    
+      position: absolute;
+      animation: levitation 8s infinite;
+      background-color: #0131B4;
+      border-radius: 50%;
+     width: 200px;
+      height: 200px;
+      top: 40%;
+      left: 40%;
+      animation-delay: 1.6s;
+
+}
+.reserch .Point_gauche .dessin5{
+    
+      position: absolute;
+      animation: levitation 8s infinite;
+      animation-delay: 0.7s;
+      background-color: #0131B4;
+      border-radius: 50%;
+     width: 120px;
+      height: 120px;
+      top: 70%;
+      left: 60%;
+
+}
+.reserch .Point_gauche .dessin6{
+
+      position: absolute;
+      animation: levitation 8s infinite;
+      animation-delay: 1.8s;
+      background-color: #0131B4;
+      border-radius: 50%;
+     width: 150px;
+      height: 150px;
+      top: 77%;
+      left:10%;
+
+}
+
+.reserch .Point_gauche .dessin7{
+    animation: levitation 8s infinite;
+    animation-delay:0.6s;
+      position: absolute;
+      background-color: #0131B4;
+      border-radius: 50%;
+     width: 120px;
+      height:120px;
+      top: 36.5%;
+      left: 10%;
+
+}
+
+
+.reserch .Point_Droit{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+
+.reserch .Point_Droit .dessin{
+    animation: levitation 8s infinite;
+    position: absolute;
+    background-color: #0131B4;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    top: 10%;
+    right: 5%;
+    animation-delay: 1.3s;
+}
+
+.reserch .Point_Droit .dessin1{
+    animation: levitation 8s infinite;
+    
+    position: absolute;
+    animation-delay: 0.1s;
+    background-color: #0131B4;
+    border-radius: 50%;
+   width: 90px;
+    height: 90px;
+    top: 0%;
+    right: 50%;
+
+}
+.reserch .Point_Droit .dessin2{
+ 
+    animation: levitation 8s infinite;
+    position: absolute;
+  animation-delay: 0.9s;
+    background-color: #0131B4;
+    border-radius: 50%;
+   width: 60px;
+    height: 60px;
+    top: 20%;
+    right: 50%;
+
+}
+
+.reserch .Point_Droit .dessin3{
+    animation: levitation 8s infinite;
+    
+    position: absolute;
+  animation-delay: 1.5s;
+    background-color: #0131B4;
+    border-radius: 50%;
+   width: 90px;
+    height: 90px;
+    top: 62%;
+    right: 10%;
+
+}
+
+.reserch .Point_Droit .dessin4{
+    animation: levitation 8s infinite;
+    position: absolute;
+    animation-delay: 0.3s;
+    background-color: #0131B4;
+    border-radius: 50%;
+   width: 180px;
+    height: 180px;
+    top: 40%;
+    right: 40%;
+
+}
+.reserch .Point_Droit .dessin5{
+    animation: levitation 8s infinite;
+    position: absolute;
+    animation-delay: 1.3s;
+    background-color: #0131B4;
+    border-radius: 50%;
+   width: 120px;
+    height: 120px;
+    top: 70%;
+    right: 60%;
+
+}
+.reserch .Point_Droit .dessin6{
+    animation: levitation 8s infinite;
+    position: absolute;
+    animation-delay: 0.4s;
+    background-color: #0131B4;
+    border-radius: 50%;
+   width: 150px;
+    height: 150px;
+    top: 77%;
+    right:10%;
+
+}
+
+.reserch .Point_Droit .dessin7{
+    animation-delay: 1s;
+    animation: levitation 8s infinite;
+    position: absolute;
+    background-color: #0131B4;
+    border-radius: 50%;
+   width: 120px;
+    height:120px;
+    top: 36.5%;
+    right:10%;
+
+}
+
+
+
+@keyframes levitation{
+
+    0%{
+       transform: translateY(10px);        
+    }
+
+
+    25%{
+       transform: translateX(10px);
+    }
+     
+    50%{
+        transform: translateY(10px);
+    }
+    75%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+           
+    
+
+}

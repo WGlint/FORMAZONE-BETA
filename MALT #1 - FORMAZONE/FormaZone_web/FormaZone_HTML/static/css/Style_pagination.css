@@ -1,0 +1,134 @@
+.pagination-buttons{
+  text-align: center;
+  justify-content: center;
+  background:#f5f5f5;
+  padding: 40px;
+  gap: 10px;
+}
+
+
+
+.page-btn {
+  background: #fff;
+  color: #007FFF;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  padding: 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 0em;
+  transition: background 0.3s ease;
+  margin: 0 2px;
+
+}
+
+.page-btn:first-of-type {
+  margin-left: 0;
+}
+
+.page-btn:last-of-type {
+  margin-right: 0;
+}
+
+.page-btn:not([class$="-page"]) {
+  width: 50px;
+  font-weight: 700;
+  display: flex;
+
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0 4px 9px -2px #646664;
+}
+
+.page-btn:not([class$="-page"]):hover{
+  border: #000033;
+}
+
+.page-btn[class*="-page"]:hover{
+   border: #000033;
+}
+
+
+.pagination-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.page-btn[class*="-page"] {
+  box-shadow: 0 4px 9px -2px #646664;
+  color: #007FFF;
+
+  font-weight: 700;
+  display: flex;
+
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.page-btn.active {
+  background: #0131B4;
+  border: #0131B4;
+  color: #fff;
+}
+
+.page-btn[disabled] {
+  opacity: 0.3;
+}
+
+#end{
+position: relative;
+
+
+}
+#start{
+  position: relative;
+
+
+  }
+
+  #start_page{
+    display: flex;
+    align-items: center;
+  }
+
+#start_page img{
+  width: 20px;
+  color: #007FFF;
+  }
+
+
+
+#start ion-icon{
+  font-size: 1.5em;
+
+  align-items: center;
+}
+
+
+#end ion-icon{
+  font-size: 1.5em;
+
+  align-items: center;
+}
+
+
+
+#end_page img{
+ width: 20px;
+  align-items: center;
+
+
+}
+
+@media screen and (max-width: 700px){
+  .pagination-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    gap: 10px 20px;
+  }
+}
+

@@ -1,0 +1,370 @@
+@media screen and (max-width: 1200px){
+
+    .reserch{
+        padding:50px;
+        display: block;
+        text-align: center;
+        height: auto;
+    }
+
+    .reserch .Contenu_primaire{
+        margin-left: 0;
+    }
+    .reserch .Point_gauche{
+        display: none;
+
+    }
+    form{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+    .reserch .Contenu_primaire .Inputeur ion-icon{
+
+    font-size: 1.9em;
+    color: #0131B4;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.reserch .Contenu_primaire .Inputeur  button{
+    display: flex;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+
+
+}
+
+.reserch .Contenu_primaire .Inputeur .search_logo {
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 5px;
+}
+    .section .collone .contenue .soustitre{
+        text-align: center;
+    }
+
+    .reserch .Point_Droit{
+        display: none;
+    }
+
+    .reserch .Contenu_primaire .Titrage{
+        text-align: center;
+    }
+
+    .reserch .Contenu_primaire .Soustitrage{
+        text-align: center;
+    }
+
+    .reserch .Contenu_primaire .Inputeur{
+        text-align: center;
+    }
+
+    .btn5{
+        text-align: center;
+    }
+
+    .mostView{
+        text-align: center;
+        justify-content: center;
+    }
+
+    .back{
+        height: auto;
+        display: block;
+        padding: 0;
+        text-align: center;
+
+
+    }
+
+    .btn1{
+        text-align: center;
+    }
+
+    .btn2{
+        text-align: center;
+    }
+
+    .back2{
+        display: inline-block;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }   
+
+    .back2 .information{
+        display: block;
+        height: auto;
+    }
+
+    .back .section{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 50px;
+        height: auto;
+    }
+
+    .back .section img{
+        height: 80%;
+        width: 100%;
+        margin: auto;
+        padding: 0;
+    }
+
+    .checkbox{
+        padding-left: 0px;
+    }
+
+    #domaine_de_recherche{
+        width: 50%;
+        margin-left: 80px;
+    }
+
+    .checkbox_check{
+        margin-left: 65px;
+    }
+
+ 
+
+  
+}
+
+
+@media screen and (max-width: 600px){
+    .back{
+        padding: 0;
+        margin: 0;
+    }
+
+    form{
+    display: flex;flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+    .reserch .Contenu_primaire .Inputeur ion-icon{
+
+    font-size: 1.9em;
+    color: #0131B4;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.reserch .Contenu_primaire .Inputeur  button{
+    display: flex;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+
+
+}
+
+    .back .section{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 50px;
+        height: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .back .section .collone .contenue .titre{
+        font-size: 22px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .back .section .collone .contenue .soustitre{
+        font-size: 15px;
+        text-align: center;
+    }
+
+
+    .back .section .collone .btn1 {
+        align-items: center;
+        text-align: center;
+    }
+    .back .section .collone .btn1 button{
+        font-size: 15px;
+    }
+
+    .section .collone .btn2 button{
+        font-size: 15px;
+    }
+    .section .collone .btn2{
+        align-items: center;
+        text-align: center;
+    }
+
+    .back2{
+        margin: 0;
+        padding: 0;
+    }
+
+    .information{
+        padding: 0;
+    }
+    .back2 .information .collone2 .contenue2 .titre2{
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .back2 .information .collone2 .contenue2 .contenue_info{
+        font-size: 1em;
+        padding: 20px;
+    }
+
+    .card{
+        width: auto;
+        max-width: 445px;
+    }
+
+    .card1{
+        width: auto;
+        max-width: 445px;
+    }
+    .card2{
+        width: auto;
+        max-width: 445px;
+
+    }
+
+    .card3{
+        width: auto;
+        max-width: 445px;
+    }
+    .card4{
+        width: auto;
+        max-width: 445px;
+    }
+
+    .card .content h2{
+        font-size: 0.7em;
+    }
+
+    .card1 .content h2{
+        font-size: 0.7em;
+    }
+
+    .card2 .content h2{
+        font-size: 0.7em;
+    }
+
+    .card3 .content h2{
+        font-size: 0.7em;
+        text-align: center;
+        align-items: center;
+    }
+
+    .btn3 button{
+        font-size: 0.9em;
+    }
+    
+    .reserch{
+       
+        width: auto;
+        height: auto;
+        display: block;
+     
+
+    }
+
+    .reserch .Contenu_primaire .Titrage{
+        font-size: 1.65em;
+        text-align: center;
+    }
+
+    .reserch .Contenu_primaire{
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .reserch .Contenu_primaire .Soustitrage{
+        font-size: 1.65em;
+        text-align: center;
+    }
+
+    .reserch .Contenu_primaire .Inputeur{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #domaine_de_recherche{
+        font-size: 15px;
+        width: auto;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    #Lieu{
+        font-size: 15px;
+        width: auto;
+        text-align: center;
+    }
+
+    .reserch .Contenu_primaire .Checkboxeur{
+        display: block;
+        position: relative;
+        justify-content: center;
+        margin-bottom: 50px;
+        margin-left: 10px;
+        text-align: center;
+        
+
+      
+    }
+
+    .reserch .Contenu_primaire .checkbox{
+        
+        margin-left: 10px;
+        margin-bottom: 10px;
+        
+    }
+
+    .reserch .Contenu_primaire .checkbox_check{
+        margin-right: 10px;
+    }
+
+    .mostView {
+        text-align: center;
+        align-items: center;
+        display: inline-block;
+    }
+
+    .mostView .btn4 button{
+        font-size: 11px;
+        padding: 10px;
+    }
+
+    .btn5{
+        text-align: center;
+
+    }
+
+    .btn5 button{
+        font-size: 15px;
+    }
+
+    .tout_formation{
+        padding: 0;
+    }
+
+    .tout_formation h2{
+        font-size: 1.5em;
+    }
+
+    footer p{
+        font-size: 0.8em;
+    }
+}

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FormaZone</title>
+   
+      
+        <link rel="stylesheet" href="{% static 'css/Style_Nav.css' %}">
+        <link rel="stylesheet" href="{% static 'css/Style_Formazone_research.css' %}">
+        <link rel="stylesheet" href="{% static 'css/responsive.formazone_research.css' %}">
+        <link rel="stylesheet" href="{% static 'css/Style_Ellements.css' %}">
+        <link rel="stylesheet" href="{% static 'css/Style_pagination.css' %}">
+    
+    </head>
+
+    <body>
+        
+        <nav class="navbar">
+            <a href="#" class="logo">FORMAZONE</a>
+            <div class="nav-links">
+                <ul>
+                    <li class="active"><a href="{% url 'Accueil' %}">ACCUEIL</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#" class="Espace_client">SE CONNECTER</a></li>
+                    <a class="cta" href="#"><button>CHERCHER UNE FORMATION</button></a> 
+                </ul>
+                
+            </div>
+            
+            <img src="{% static 'img/menu-btn.png' %}" alt="menu hamburger" class="menu-hamburger">
+        </nav>
+
+        <header> 
+            <div class="Inputeur">
+                <form class="box_1">
+                <h1>Ma Formation :</h1>
+                <input type="search" value="{{ search }}" name="domaine_de_recherche" id="domaine_de_recherche" placeholder="Domaine de la formation ...">
+                <input type="search" name="Lieu" id="Lieu" placeholder="Où ?"/>
+                <div class="search_logo">
+                  <button class="btn_icons"> <ion-icon name="search-outline" type="submit"></ion-icon></button>
+                  <a class="Valider_la_recherche" href="#"><button>RECHERCHER</button></a>
+                </div>
+                </form>
+
+                <div class="filter_zone">
+                    
+                    <div class="filter_logo">
+                        <ion-icon name="options-outline"></ion-icon>
+                    </div>
+                    
+                    <span>Filtre de recherche</span>
+                </div>
+            </div>
+
+            <div class="filter_customer">
+
+                <div class="Hide_side">
+
+               
+                <label class="checkbox"> 
+                    <input class="checkbox_input" type="checkbox">
+                    <svg class="checkbox_check" width="25" 
+                  height="25">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    COMPTABILITER
+                  </label>
+
+                  <label class="checkbox"> 
+                    <input class="checkbox_input" type="checkbox">
+                    <svg class="checkbox_check" width="25" 
+                  height="25">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    ASSURANCES
+                  </label>
+
+                  <label class="checkbox"> 
+                    <input class="checkbox_input" type="checkbox">
+                    <svg class="checkbox_check" width="25" 
+                  height="25">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    BANQUE
+                  </label>
+
+                  <label class="checkbox"> 
+                    <input class="checkbox_input" type="checkbox">
+                    <svg class="checkbox_check" width="25" 
+                  height="25">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    SITEWEB 
+                  </label>
+
+                  <label class="checkbox"> 
+                    <input class="checkbox_input" type="checkbox">
+                    <svg class="checkbox_check" width="25" 
+                  height="25">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    DOMOTIQUE
+                  </label>
+
+                  <label class="checkbox"> 
+                    <input class="checkbox_input" type="checkbox">
+                    <svg class="checkbox_check" width="25" 
+                  height="25">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    MICROTRONIQUE
+                  </label>
+                  </div>
+            </div>
+        </header>
+        
+
+        <div class="boxe_for_main-title"><h2> {{ Number_Post.count }} formations trouvées :</h2> </div>
+        <div class="bigbox">
+
+        
+        <div class="Auto-flex-around">
+           
+            {% for info in Info %}
+            <div class="bloc1-flex-between">
+                <div class="Repeated_card_design">
+                    <h1 class="Title_of_card">{{ info.Title }}</h1>
+                    <span class="Timer_of_card"><ion-icon name="time-outline"></ion-icon>{{ info.Temps }}</span>
+                    <span class="where_is_formation"><ion-icon name="map-outline"></ion-icon>{{ info.Option }}</span>
+                    <span class="Price_of_formation"><ion-icon name="logo-euro"></ion-icon>{{ info.Prix }} €</span>
+                    <a class="En_savoir_plus" href="#"><button class="btn1">En savoir plus</button></a>
+                    
+                        <div class="affiche_elements">
+                            <div class="contenue_interne">
+
+                                <p> {{ info.Title }} </p>
+                                <div class="toggle_box">
+                                    <div class="toggle_icone">
+                                        <ion-icon name="close-outline"></ion-icon>
+                                    </div>                        
+                                </div>
+                            <a class="Connaitre_tout"><button>Voir la formation complète</button></a>
+                            </div>
+                        </div>
+                    
+                </div>     
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+<nav class="pagination-buttons">
+
+  <a href="?domaine_de_recherche={{ search }}&Lieu=&page=1"><button type="button" class="page-btn start-page" id="start_page"><img  src="{% static 'img/double_gauche.png' %}" alt="double left"/></button></a>
+
+  {% if Info.has_previous %}
+  <a href="?page={{ Info.previous_page_number }}"><button type="button" class="page-btn start-page" id="start"><ion-icon name="chevron-back-outline"></ion-icon></button></a>
+  {% else %}
+  <a href="?domaine_de_recherche={{ search }}&Lieu=&page=1"><button type="button" class="page-btn start-page" id="start"><ion-icon name="chevron-back-outline"></ion-icon></button></a>
+  {% endif %}
+
+  {% if Page.num_pages <= 10 %}
+    {% for i in range %}
+    {% if Info.number == i %}
+    <a href="?domaine_de_recherche={{ search }}&Lieu=&page={{ forloop.counter }}"><button type="button" class="page-btn active">{{ forloop.counter }}</button></a>
+    {% else %}
+    <a href="?domaine_de_recherche={{ search }}&Lieu=&page={{ forloop.counter }}"><button type="button" class="page-btn">{{ forloop.counter }}</button></a>
+    {% endif %}
+    {% endfor %}
+  {% else %}
+    {% for i in range %}
+    {% if i <= 3 or i >= range3 %}
+    {% if Info.number == i %}
+    <a href="?domaine_de_recherche={{ search }}&Lieu=&page={{ forloop.counter }}"><button type="button" class="page-btn active">{{ forloop.counter }}</button></a>
+    {% else %}
+    <a href="?domaine_de_recherche={{ search }}&Lieu=&page={{ forloop.counter }}"><button type="button" class="page-btn">{{ forloop.counter }}</button></a>
+    {% endif %}
+    {% endif %}
+    {% if i == 4 %}
+    <button type="button" class="page-btn">...</button>
+    {% endif %}
+    {% endfor %}
+  {% endif %}
+
+  {% if Info.has_next %}
+  <a href="?domaine_de_recherche={{ search }}&Lieu=&page={{ Info.next_page_number }}"><button type="button" class="page-btn next-page" id="end"><ion-icon name="chevron-forward-outline"></ion-icon></button></a>
+  {% else %}
+  <a href="?domaine_de_recherche={{ search }}&Lieu=&page={{ Page.num_pages }}"><button type="button" class="page-btn next-page" id="end"><ion-icon name="chevron-forward-outline"></ion-icon></button></a>
+  {% endif %}
+
+  <a href="?domaine_de_recherche={{ search }}&Lieu=&page={{ Page.num_pages }}"><button type="button" class="page-btn end-page" id="end_page"><img src="{% static 'img/double_droit.png' %}"/></button></a>
+
+</nav>
+
+
+
+
+    </body>
+
+    <footer>
+        <p>Open Formation © 2022 - <a href="#">Tous droits revervés</a>  - <a href="#">Mentions légales</a> - <a href="#">CGU</a></p>
+      </footer>
+
+      <script>
+        const btn1 = document.querySelectorAll('.btn1');
+        const element1 = document.querySelectorAll('.affiche_elements');
+        const icon = document.querySelectorAll('.toggle_icone');
+
+
+        for (let i = 0; i < btn1.length; i++){
+            btn1[i].addEventListener('click', ()=>{
+            element1[i].classList.toggle('active');
+        });
+
+
+        icon[i].addEventListener('click', ()=>{
+            element1[i].classList.remove('active');
+        });
+
+
+        }
+        
+        
+      </script>
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+        document.getElementsByName
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+     </script>
+
+     <script>
+            const selector = document.querySelector('.filter_logo');
+            const defileur = document.querySelector('.filter_customer');
+            const checkeur = document.querySelector('.Hide_side');
+     
+
+            selector.onclick = function(){
+            defileur.classList.toggle('active');
+            checkeur.classList.toggle('active');
+                }
+
+         
+
+
+
+
+
+     </script>
+
+
+     
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+      
+
+        
+</html>
